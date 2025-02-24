@@ -67,7 +67,7 @@ global.thumb = fs.readFileSync('./lib/theme/thumb.jpg')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
+    console.log(chalk.redBright(`Update'${__filename}'D99187A9BDCDF385E6B0C590B2831254`))
     delete require.cache[file]
     require(file)
 })
